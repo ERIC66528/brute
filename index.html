@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Wallet Scanner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="matrix" class="matrix-bg"></canvas>
+
+  <div class="app">
+    <div class="log" id="logBox"></div>
+    <div class="buttons">
+      <button id="stopBtn">STOP</button>
+      <button id="startBtn">START</button>
+    </div>
+    <div class="status">Scanned: <span id="scanned">0</span></div>
+    <div class="found" id="foundWallet" style="display: none;">
+      <div>
+        <span class="crypto-value" id="btcAmount">0 BTC</span>
+        <span class="crypto-value" id="btcValue">= 0$</span>
+      </div>
+      <div>
+        <span class="crypto-value" id="bnbAmount">0 BNB</span>
+        <span class="crypto-value" id="bnbValue">= 0$</span>
+      </div>
+      <div>
+        <span class="crypto-value" id="sglAmount">0 SGL</span>
+        <span class="crypto-value" id="sglValue">= 0$</span>
+      </div>
+    </div>
+    <div class="http-counter" id="httpCounter">http: 284587513 [Frid 3] = 13278</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
